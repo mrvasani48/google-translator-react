@@ -1,19 +1,22 @@
-Google Translator React Component
-This repository provides a React component that integrates Google Translate into your React application. The GoogleTranslate component allows users to translate the webpage content into different languages using the Google Translate service.
+# Google Translator React Component
 
-Features
-Easy integration of Google Translate into React applications.
-Supports multiple languages.
-Automatically displays the Google Translate widget on the page.
-Installation
-To use the GoogleTranslate component in your React project, follow these steps:
+This repository provides a React component that integrates Google Translate into your React application. The `GoogleTranslate` component allows users to translate the webpage content into different languages using the Google Translate service.
 
-Ensure you have a React project set up. If you don't have one, create a new React project using Create React App:
+## Features
 
-bash
-Copy code
-npx create-react-app my-app
-cd my-app
+- Easy integration of Google Translate into React applications.
+- Supports multiple languages.
+- Automatically displays the Google Translate widget on the page.
+
+## Installation
+
+To use the `GoogleTranslate` component in your React project, follow these steps:
+
+1. Ensure you have a React project set up. If you don't have one, create a new React project using Create React App:
+
+   ```bash
+   npx create-react-app my-app
+   cd my-app
 Download or clone this repository and copy the GoogleTranslate component file to your project, or simply create the component file directly in your project.
 
 Import and use the GoogleTranslate component in your application.
@@ -25,6 +28,8 @@ Create a file named GoogleTranslate.js and add the following code:
 
 javascript
 Copy code
+
+```bash
 import React, { useEffect } from 'react';
 
 const GoogleTranslate = () => {
@@ -68,14 +73,16 @@ const GoogleTranslate = () => {
     </div>
   );
 }
-
 export default GoogleTranslate;
+```
 Use the GoogleTranslate component in your application
 
 Import and use the GoogleTranslate component in your main application file, typically App.js. Wrap the component with an error boundary to handle any potential errors gracefully:
 
 javascript
 Copy code
+
+```bash
 import React from 'react';
 import GoogleTranslate from './GoogleTranslate';
 import ErrorBoundary from './ErrorBoundary'; // Assume you have an ErrorBoundary component
@@ -91,12 +98,15 @@ function App() {
 }
 
 export default App;
+```
 Error Boundary Component
 
 Ensure you have an ErrorBoundary component to catch any errors. If you don't have one, create a simple error boundary component like this:
 
 javascript
 Copy code
+
+```bash
 import React, { Component } from 'react';
 
 class ErrorBoundary extends Component {
@@ -123,3 +133,4 @@ class ErrorBoundary extends Component {
 }
 
 export default ErrorBoundary;
+```
